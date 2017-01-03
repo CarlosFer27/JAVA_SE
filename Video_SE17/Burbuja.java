@@ -6,25 +6,42 @@ public class Burbuja {
 	public static void main(String[] args){
 		Scanner leer = new Scanner(System.in);
 		
-		System.out.println("De que tamaño requieres tu arreglo?");
-		int tamanio = leer.nextInt();
+		System.out.println("De que tamaño quieres tu arreglo:");
+		int tamanio =leer.nextInt();
 		
-		int[] numeros = new int[tamanio];
+		int[] edades = new int[tamanio];
 		
 		for (int contLlenado=0; contLlenado<tamanio; contLlenado++){
-			System.out.println("Ingresa valor: ");
-			numeros[contLlenado] =leer.nextInt();
+			System.out.println("Ingresa la edad:");
+			edades[contLlenado]=leer.nextInt();
 		}
-		/* validador de llenado de arreglo
-		int contImpresion=0;
-		for (int valor: numeros){
-			System.out.println("El valor de la posicion "+contImpresion+" es "+valor);
-			contImpresion++;
+		
+	/*	int contValor=0;
+		for(int llenado: edades){
+			System.out.println("El valor de la posicion "+contValor+" es "+llenado);
+			contValor++;
 		}*/
 		
+		int auxiliar =0;
 		
-		
+		for (int contRecorrido=0; contRecorrido<(edades.length-1); contRecorrido++){
+			for (int barrido=0; barrido<(edades.length-1); barrido ++){
+				if (edades[barrido] > edades[barrido +1] ){
+				auxiliar=edades[barrido];
+				edades[barrido]=edades[barrido+1];
+				edades[barrido+1]=auxiliar;
+				}
+			}
+		}
+		for(int llenado: edades){
+			System.out.println(llenado);
+		}
 		
 	}
-
+	
 }
+		
+		
+		
+	
+
