@@ -2,9 +2,9 @@ package Video_SE25;
 
 public class Zapato { //Se crea la clase Zapato
 	//Se declaran sus atributos
-	String marca; 
-	String modelo;
-	float talla;
+	public String marca; 
+	public String modelo;
+	public float talla;
 	
 	/* Se crea el constructor vacio, tambien conocido como constructor por default,
 	 * si no es creado, Java lo genera automaticamente, NOTA: aquí se esta imprimiendo
