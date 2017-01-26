@@ -30,11 +30,11 @@ public class RendimientoConstArrayList {
       
        
        //Creamos una tercera lista con el constructor donde especificamos la capacidad inicial
-       List<String> tercConst = new ArrayList(10);
+       List<Integer> tercConst = new ArrayList(10);
 
         long init3 = System.nanoTime();
         for(int cont=0; cont<150000; cont++){
-            segundConst.add(cont);
+        	tercConst.add(cont);
         }
         long fin3 = System.nanoTime();
         System.out.println("Tiempo tercer constructor: "+(fin3-init3));
