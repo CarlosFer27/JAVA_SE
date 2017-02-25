@@ -6,9 +6,9 @@ import Video_SE52.Clases.Familiar;
 
 public interface DAOFamiliar {
 	
-	public void insertarFamiliar(Familiar fam);
-	public void eliminarFamiliar(Familiar fam);
-	public void modificarFamiliar(Familiar fam);
+	public void insertarFamiliar(Familiar fam) throws Exception;
+	public void eliminarFamiliar(Familiar fam) throws Exception;
+	public void modificarFamiliar(Familiar fam) throws Exception;
 	public List<Familiar> listarFamiliar() throws Exception;
 	
 

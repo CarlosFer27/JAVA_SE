@@ -2,6 +2,10 @@ package Video_SE52.Clases;
 
 public class Familiar {
 	public int id_familiar;
+	public String nombre;
+	public String apellido;
+	public String apodo;
+
 	public int getId_familiar() {
 		return id_familiar;
 	}
@@ -9,10 +13,6 @@ public class Familiar {
 	public void setId_familiar(int id_familiar) {
 		this.id_familiar = id_familiar;
 	}
-	public String nombre;
-	public String apellido;
-	public String apodo;
-	
 	
 	public String getNombre() {
 		return nombre;
